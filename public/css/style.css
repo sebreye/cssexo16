@@ -1,0 +1,32 @@
+.exo1{
+    display: flex;
+    border-spacing: 100px;
+}
+
+.carré{
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+    animation:change-background 2s 1s;
+}
+.exo2{
+    display: flex;
+    justify-content: space-around
+}
+.rotate{
+    background-color: lightblue;
+    border: 1px solid black;
+    color: white;
+    height: 150px;
+    width: 150px;
+}
+@keyframes change-background
+0%{
+background:blue;
+}
+50%{
+background:orange;
+}
+100%{
+background:orange;
+}
