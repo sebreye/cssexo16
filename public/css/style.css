@@ -2,12 +2,15 @@
     display: flex;
     border-spacing: 100px;
 }
-
+.block-grey{
+    
+}
 .carré{
     background-color: blue;
     height: 150px;
     width: 150px;
-    animation:change-background 2s 1s;
+    animation:change-background 3s 1s infinite alternate;
+
 }
 .exo2{
     display: flex;
@@ -20,13 +23,14 @@
     height: 150px;
     width: 150px;
 }
-@keyframes change-background
+@keyframes change-background{
 0%{
 background:blue;
 }
 50%{
-background:orange;
+    background: orange;
 }
 100%{
-background:orange;
+background: red;
+}
 }
