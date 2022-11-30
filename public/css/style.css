@@ -1,9 +1,12 @@
 .exo1{
     display: flex;
-    border-spacing: 100px;
+    
 }
 .block-grey{
-    
+    background-color: grey;
+    position: relative;
+    height: 20px;
+    width: 211px ;
 }
 .carré{
     background-color: blue;
@@ -13,15 +16,40 @@
 
 }
 .exo2{
+    margin-top: ;
     display: flex;
     justify-content: space-around
 }
-.rotate{
+.rotatex{
     background-color: lightblue;
     border: 1px solid black;
     color: white;
     height: 150px;
     width: 150px;
+}
+.rotatex:hover{
+    animation:rotatex 3s
+}
+.rotatey{
+    background-color: lightblue;
+    border: 1px solid black;
+    color: white;
+    height: 150px;
+    width: 150px;
+    ;
+}
+.rotatey:hover{
+    animation:rotatey 3s
+}
+.rotatez{
+    background-color: lightblue;
+    border: 1px solid black;
+    color: white;
+    height: 150px;
+    width: 150px;
+}
+.rotatez:hover{
+    animation:rotatez 3s
 }
 @keyframes change-background{
 0%{
@@ -33,4 +61,28 @@ background:blue;
 100%{
 background: red;
 }
+}
+@keyframes rotatex{
+    from{
+        transform: rotateX(0);
+    }
+    to{
+        transform: rotateX(360deg);
+    }
+}
+@keyframes rotatey{
+    from{
+        transform: rotatey(0);
+    }
+    to{
+        transform: rotatey(360deg);
+    }
+}
+@keyframes rotatez{
+    from{
+        transform: rotatez(0);
+    }
+    to{
+        transform: rotatez(360deg);
+    }
 }
